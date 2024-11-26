@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Bestie Forever?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: auto;
+        }
+        h1 {
+            color: #ff69b4;
+        }
+        p {
+            font-size: 18px;
+            color: #555;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff69b4;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #ff1493;
+        }
+        .celebration {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+        }
+        .celebration div {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            color: #ff69b4;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Will You Be My Bestie Forever?</h1>
+        <p>Hey Tista,</p>
+        <p>We've shared countless memories, laughter, and adventures together. You're not just a friend to me; you're family.</p>
+        <p>You've always been there for me through thick and thin, and I can't imagine my life without you by my side. That's why I want to ask you:</p>
+        <h1>Will you be my bestie forever?</h1>
+        <div class="button" onclick="showCelebration()">Yes, Absolutely!</div>
+    </div>
+    <div class="celebration" id="celebration">
+        <div>
+            🎉🎉 Congratulations! 🎉🎉<br>
+            You're the best bestie ever!
+        </div>
+    </div>
+    <script>
+        function showCelebration() {
+            document.getElementById('celebration').style.display = 'flex';
+        }
+    </script>
+</body>
+</html>
